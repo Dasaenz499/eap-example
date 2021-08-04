@@ -1,5 +1,0 @@
-#Fri Jul 23 17:02:28 COT 2021
-configuration*?=86044FC27B84AE24D4F7071322A2758A55F30819
-module-resource*?\:/wildfly-checkstyle/suppressions.xml=DD3FD5987C62C3034A4613F83C42B24683BCFC2E
-/Users/diegosaenz/Documents/Demo/openshift-confa/jboss-eap-quickstarts-7.3.x/helloworld-html5/src/main/java/org/jboss/as/quickstarts/html5rest/HelloWorld.java=1622053471000
-/Users/diegosaenz/Documents/Demo/openshift-confa/jboss-eap-quickstarts-7.3.x/helloworld-html5/src/main/java/org/jboss/as/quickstarts/html5rest/HelloService.java=1622053471000
