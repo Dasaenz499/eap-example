@@ -24,7 +24,7 @@ pipeline {
 
 
 
-                sh "mvn clean compile -DskipTests "
+                sh "mvn clean compile package -DskipTests "
 
 
 
