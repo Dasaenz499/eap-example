@@ -33,5 +33,25 @@ pipeline {
       }
     }
     
+    stage("Build Image") {
+
+      steps {
+        script {
+          echo "Init Build Image"
+          dir(var_context_dir) {
+            openshift.withCluster() {
+              openshift.verbose()
+              openshift.withProject("eap-example") {
+                openshift.selector("bc", "mysample").startBuild("--from-file=./target/helloworld-html5.war", "--wait=true")
+              }
+            }
+          }
+          echo "End Build Image"
+        }
+      }
+    }
+    
+    
   }
 }
+
