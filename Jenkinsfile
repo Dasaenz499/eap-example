@@ -41,7 +41,7 @@ pipeline {
          
             openshift.withCluster() {
               openshift.verbose()
-              openshift.withProject("eap-example") {
+              openshift.withProject("dev-environment") {
                 openshift.selector("bc", "mysample").startBuild("--from-file=./target/helloworld-html5.war", "--wait=true")
               }
             }
