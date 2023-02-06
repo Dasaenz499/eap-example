@@ -51,23 +51,7 @@ pipeline {
       }
     }
     
-    stage("Deploy QA") {
-
-      steps {
-        script {
-          echo "Init Build Image"
-         
-            openshift.withCluster() {
-              openshift.verbose()
-              openshift.withProject("qa-environment") {
-                openshift.selector("bc", "mysample").startBuild("--from-file=./target/helloworld-html5.war", "--wait=true")
-              }
-            }
-          
-          echo "End Build Image"
-        }
-      }
-    }
+   
     
     
     
